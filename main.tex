@@ -1,3 +1,4 @@
+% !TeX spellcheck = es_ES
 \documentclass[a4paper,12pt]{article}
 
 \usepackage{ucs}
@@ -6,10 +7,19 @@
 \usepackage{fontenc}
 \usepackage{graphicx}
 
-\usepackage[dvips]{hyperref}
+% \usepackage[dvips]{hyperref} % dont know why it doesnt work, or what it is
 
 \date{10-07-22}
 
 \begin{document}
-abc
+
+\include{title.tex}
+\tableofcontents
+%\tableoffigures % lacks package for this
+%\tableoftables
+
+\include{changelog.tex}
+\include{definitions-and-specification.tex}
+\include{system-architecture.tex}
+
 \end{document}
