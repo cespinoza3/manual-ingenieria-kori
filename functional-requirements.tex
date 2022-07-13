@@ -2,9 +2,10 @@
 \subsubsection{Requisitos funcionales}
 
 \newcommand{\funcionalidad}[7][none]{
-	#2
-	
-	\begin{tabular}{|c|c|}
+	%\paragraph{#2}
+	\item #2
+
+	\begin{tabularx}{\textwidth}{|c|X|}
 		\hline
 		Módulo & #3 \\
 		\hline
@@ -16,12 +17,17 @@
 		\hline
 		Salida & #7 \\
 		\hline
-	\end{tabular}
+	\end{tabularx}
 }
+\begin{enumerate}
 
-\funcionalidad{ejemplo}
-{modulo}
-{descripción}
-{entrada}
-{proceso}
-{salida}
+	
+	\funcionalidad{ejemplo}
+	{modulo}
+	{descripción}
+	{entrada}
+	{proceso}
+	{salida}
+
+
+\end{enumerate}
